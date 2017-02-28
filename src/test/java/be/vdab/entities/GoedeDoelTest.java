@@ -2,6 +2,8 @@ package be.vdab.entities;
 
 import static org.junit.Assert.assertEquals;
 
+import java.math.BigDecimal;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -17,4 +19,10 @@ public class GoedeDoelTest {
 	public void getNaam() {
 		assertEquals(NAAM, doel.getNaam());
 	}
+	
+	@Test
+	public void eenNieuwDoelHeeftNogNietsOpgebracht() {
+	assertEquals(0, doel.getOpgebracht().compareTo(BigDecimal.ZERO));
+	}
+	
 }
