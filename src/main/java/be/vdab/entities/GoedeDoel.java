@@ -12,6 +12,7 @@ public class GoedeDoel {
 		return naam;
 	}
 	public BigDecimal getOpgebracht() {
-		return opgebracht;
+		return opgebracht;  
 	}
 }
+ 
